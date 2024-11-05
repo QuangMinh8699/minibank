@@ -4,20 +4,16 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.minh.auth.config.ApplicationConfig;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
-public class JwtUntil {
+public class JwtTokenUntil {
 
     private final ApplicationConfig applicationConfig;
 
-    @Autowired
-    public JwtUntil(ApplicationConfig applicationConfig) {
+    public JwtTokenUntil(ApplicationConfig applicationConfig) {
         this.applicationConfig = applicationConfig;
     }
 
