@@ -1,5 +1,6 @@
 package org.minh.common.controller.impl;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.minh.common.controller.BankAccountController;
 import org.minh.common.schema.request.GetBankAccountByCifRequestBody;
 import org.minh.common.schema.response.GetBankAccountByCifResponseBody;
@@ -19,7 +20,7 @@ public class BankAccountControllerImpl implements BankAccountController {
     }
 
     @Override
-    public GetBankAccountByCifResponseBody getBankAccountByCif(@RequestBody GetBankAccountByCifRequestBody requestBody) {
-        return null;
+    public GetBankAccountByCifResponseBody getBankAccountByCif(@RequestBody GetBankAccountByCifRequestBody requestBody, HttpServletRequest httpServletRequest) throws Exception {
+        return bankAccountService.getBankAccountByCif(requestBody);
     }
 }

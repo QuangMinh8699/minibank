@@ -1,7 +1,6 @@
 package org.minh.customer.exception;
 
 public class CustomerException extends Exception {
-
     public CustomerException() {
         super("An error occurred in CustomException");
     }

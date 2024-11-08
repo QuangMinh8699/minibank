@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 public class BankAccountEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String id;
     private String cif;
     private String accountNumber;
     private String accountClass;
